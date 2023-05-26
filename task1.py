@@ -25,8 +25,6 @@ entry3 = tk.Label(window,text="", width=20)
 
 
 
-
-
 label1.grid(row = 1, column = 2)
 label2.grid(row = 1, column = 4)
 
@@ -38,8 +36,6 @@ entry3.grid(row=1, column = 5)
 def f1(e):
     num1 = entry1.get()
     num2 = entry2.get()
-
-    
     answer = float(num2)*float(num1)
     print(answer)
     entry3.config(text=answer)
@@ -51,20 +47,6 @@ def f2(e):
 
 label2.bind('<Button-1>',f1)
 label2.bind('<Button-2>',f2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
